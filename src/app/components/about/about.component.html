@@ -1,0 +1,18 @@
+<section id="about">
+  <div class="wrap">
+    <div class="sec-top reveal">
+      <div>
+        <div class="sec-label">Worked With</div>
+        <h2>TEAMS &amp; <span class="accent">DOMAINS.</span></h2>
+      </div>
+    </div>
+    <div class="worked-grid reveal">
+      <div class="worked-card" *ngFor="let w of worked">
+        <div class="qmark">"</div>
+        <div class="org">{{ w.org }}</div>
+        <div class="role">{{ w.role }}</div>
+        <div class="desc">{{ w.desc }}</div>
+      </div>
+    </div>
+  </div>
+</section>

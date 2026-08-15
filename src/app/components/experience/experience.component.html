@@ -1,0 +1,37 @@
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-top reveal">
+      <div>
+        <div class="sec-label">Career Path</div>
+        <h2>EXPERIENCE &amp; <span class="accent">EDUCATION.</span></h2>
+      </div>
+    </div>
+    <div class="exp-timeline reveal">
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <div class="exp-card">
+          <div class="exp-meta">06/2023 — Present · Chennai, Tamil Nadu</div>
+          <h3 class="exp-role">Frontend Developer – Angular</h3>
+          <div class="exp-org">VSolvE Engineering India Private Limited</div>
+          <ul class="exp-list">
+            <li *ngFor="let r of responsibilities">{{ r }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-top reveal" style="margin-top:64px;">
+      <div>
+        <div class="sec-label">Education</div>
+        <h2>ACADEMIC <span class="accent">BACKGROUND.</span></h2>
+      </div>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card" *ngFor="let e of education">
+        <div class="edu-meta">{{ e.meta }}</div>
+        <h3 class="edu-degree">{{ e.degree }}</h3>
+        <div class="edu-school">{{ e.school }}</div>
+      </div>
+    </div>
+  </div>
+</section>

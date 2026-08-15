@@ -1,0 +1,9 @@
+{
+  "outputDirectory": "dist/santhosh-portfolio/browser",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

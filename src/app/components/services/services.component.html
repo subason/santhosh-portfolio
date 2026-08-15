@@ -1,0 +1,13 @@
+<section id="services">
+  <div class="services-row reveal">
+    <div class="services-head">
+      <div class="sec-label">Services</div>
+      <h2>CAPABILITIES THAT<br>DRIVE <span class="accent">IMPACT.</span></h2>
+    </div>
+    <div class="svc" *ngFor="let s of services">
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/><path d="M8 14h3"/></svg>
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.desc }}</p>
+    </div>
+  </div>
+</section>

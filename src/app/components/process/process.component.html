@@ -1,0 +1,18 @@
+<section id="process">
+  <div class="wrap">
+    <div class="sec-top reveal">
+      <div>
+        <div class="sec-label">Workflow</div>
+        <h2>THE DEVELOPMENT <span class="accent">PROCESS.</span></h2>
+      </div>
+    </div>
+    <div class="process-row reveal">
+      <div class="step" *ngFor="let s of steps">
+        <div class="step-num"><span>{{ s.num }}</span></div>
+        <div class="big">{{ s.num }}</div>
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

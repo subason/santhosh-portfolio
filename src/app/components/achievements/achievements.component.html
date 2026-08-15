@@ -1,0 +1,17 @@
+<section id="achievements">
+  <div class="wrap">
+    <div class="sec-top reveal">
+      <div>
+        <div class="sec-label">Achievements</div>
+        <h2>WINS WORTH <span class="accent">NOTING.</span></h2>
+      </div>
+    </div>
+    <div class="achv-strip reveal">
+      <div class="achv" *ngFor="let a of achievements">
+        <div class="badge-ring">{{ a.badge }}</div>
+        <div class="stat" #statNum [attr.data-target]="a.num" [attr.data-suffix]="a.suffix">{{ a.raw }}</div>
+        <div class="label" [innerHTML]="a.label"></div>
+      </div>
+    </div>
+  </div>
+</section>

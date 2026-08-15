@@ -1,0 +1,26 @@
+<section id="skills" class="skills-section">
+  <div class="wrap">
+    <div class="skills-row">
+      <div class="skills-head reveal">
+        <div class="sec-label">My Skills</div>
+        <h2>LET'S EXPLORE POPULAR<br>SKILLS &amp; <span class="accent">EXPERIENCE</span></h2>
+        <p>Core stack for building and shipping full-scale Angular applications, from component architecture on the frontend to REST APIs and cloud deployment on the backend.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-card"
+             *ngFor="let s of skills; let i = index"
+             [class.is-top]="selectedIndex === i"
+             tabindex="0"
+             role="button"
+             (click)="select(i)"
+             (keydown.enter)="select(i)"
+             (keydown.space)="select(i)">
+          <span class="skill-icon" [innerHTML]="s.icon"></span>
+          <div class="skill-name">{{ s.name }}</div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" [style.width.%]="s.pct" [style.background]="s.color"></div></div>
+          <div class="skill-pct">{{ s.pct }}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

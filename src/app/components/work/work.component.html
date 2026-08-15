@@ -1,0 +1,32 @@
+<section id="work">
+  <div class="wrap">
+    <div class="sec-top reveal">
+      <div>
+        <div class="sec-label">Featured Work</div>
+        <h2>PROJECTS THAT <span class="accent">SHIPPED.</span></h2>
+      </div>
+      <a class="view-all" href="#experience">View Full Experience →</a>
+    </div>
+    <div class="work-grid">
+      <div class="work-card reveal" *ngFor="let item of items; let i = index" [class]="'delay-' + (i + 1)">
+        <div class="work-thumb">
+          <img [src]="item.image" [alt]="item.alt"
+               style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;z-index:0;border-radius:0;">
+          <span class="wt-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M3 10l9-6 9 6"/><path d="M5 10v9M10 10v9M14 10v9M19 10v9"/><path d="M3 19h18"/>
+            </svg>
+          </span>
+          <span class="wt-label">{{ item.label }}</span>
+        </div>
+        <div class="work-meta">
+          <div class="wname">{{ item.name }}</div>
+          <div class="wcat">{{ item.category }}</div>
+          <div class="work-features">
+            <span class="wf-tag" *ngFor="let f of item.features">{{ f }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
